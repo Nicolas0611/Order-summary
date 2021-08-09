@@ -12,8 +12,9 @@
     --neutral-color-darkblue:hsl(223, 47%, 23%);
     
     /*========== Font  ==========*/
-
+    --body-font: 'Red Hat Display', sans-serif;
     --font-size-paragraph :16px;
+    --font-size-title :26px;
     --font-light:500;
     --font-medium:700;
     --font-bold:900;
@@ -24,3 +25,43 @@
     padding:0;
     margin:0;
 }
+body{
+    padding: 0;
+    font-family: var(--body-font);
+}
+#bg-page{
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color-paleblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    max-width: 450px;
+    background-color: var(--neutral-color-verypale);
+    text-align: center;
+    margin: 0 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-info > h1{
+    padding-top: 53px;
+    padding-bottom: 30px;
+    font-size: var(--font-size-title);
+    color: var(--neutral-color-darkblue);
+    font-weight: var(--font-bold);
+}
+.card-info > p{
+    font-size: var(--font-size-paragraph);
+    color: var(--neutral-color-desaturated);
+    font-weight: var(--font-light);
+    padding-left:  3.5625em;
+    padding-right:  3.5625em;
+}
+  
+  
