@@ -43,11 +43,16 @@ body{
 
 .card-container{
     max-width: 430px;
+    min-height: 700px;
     background-color: var(--primary-color-white);
     text-align: center;
     margin: 0 25px;
     border-radius: 15px;
     overflow: hidden;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
 }
 .card-info > h1{
     padding-top: 53px;
@@ -98,3 +103,29 @@ body{
     font-weight: var(--font-light);
     font-size: 16px;
 }  
+.card-info-btn{
+    margin-top: 31.7px;
+    margin-right: 48px;
+    margin-left: 48px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 12px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-brightblue);
+    box-shadow: 0 16px 10px var(--primary-color-paleblue);
+}
+.card-info-btn > a{
+    color:var(--primary-color-white);
+    font-weight: var(--font-light);
+    font-size: 16px;
+    text-decoration: none;
+}
+.card-cancel {
+    margin-top: 36px;
+    color: var(--neutral-color-desaturated);
+    font-weight: var(--font-medium);
+    font-size: 16px;
+    text-decoration: none;
+}
