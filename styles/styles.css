@@ -5,7 +5,7 @@
     /*========== Colores Primarios ==========*/
     --primary-color-paleblue: hsl(225, 100%, 94%);
     --primary-color-brightblue:hsl(245, 75%, 52%);
-    
+    --primary-color-white: white;
     /*========== Colores Neutrales ==========*/
     --neutral-color-verypale:hsl(225, 100%, 98%);
     --neutral-color-desaturated:hsl(224, 23%, 55%);
@@ -42,8 +42,8 @@ body{
 }
 
 .card-container{
-    max-width: 450px;
-    background-color: var(--neutral-color-verypale);
+    max-width: 430px;
+    background-color: var(--primary-color-white);
     text-align: center;
     margin: 0 25px;
     border-radius: 15px;
@@ -60,8 +60,41 @@ body{
     font-size: var(--font-size-paragraph);
     color: var(--neutral-color-desaturated);
     font-weight: var(--font-light);
-    padding-left:  3.5625em;
-    padding-right:  3.5625em;
+    padding-left:  2.5625em;
+    padding-right:  2.5625em;
+    padding-bottom: 26px;
 }
-  
-  
+.btn-plan{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neutral-color-verypale);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+}
+.btn-plan > img{
+    padding-left: 20px;
+} 
+.btn-plan> a {
+    padding-right: 20px;
+    color:var(--primary-color-brightblue);
+    font-weight: var(--font-bold);
+    font-size: 16px;
+}  
+.btn-plan-content{
+    padding-right: 85px;
+}  
+.btn-plan-content>p:first-child{
+    color: var(--neutral-color-darkblue) ;
+    font-weight: var(--font-bold);
+}  
+.btn-plan-content>p:last-child{
+    color: var(--neutral-color-desaturated) ;
+    font-weight: var(--font-light);
+    font-size: 16px;
+}  
