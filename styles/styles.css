@@ -141,12 +141,13 @@ body{
         padding-right: 55px;
     }  
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 413px) {
     .btn-plan > img{
         padding-left: 5px;
     } 
     .btn-plan> a {
-        padding-right: 0px;
+        padding-right: 6px;
+        font-size: 14px;
     }  
     .btn-plan-content{
         padding-right: 5px;
